@@ -18,7 +18,7 @@ jobs:
       run: |
               Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PPYLL/zip_unzipTest/main/unzip.exe" -OutFile "C:\unzip.exe"
               cd ..
-              Copy-Item .\* -Destination D:\a\b\
+              Copy-Item .\*.zip -Destination D:\a\b\ -Recurse
               C:\unzip.exe -o D:\a\b\*.zip
               del D:\a\b\*.zip
     - name: upload__artifact

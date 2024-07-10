@@ -17,9 +17,9 @@ jobs:
     - name: unzip
       run: |
            New-Item -ItemType Directory -Path "C:\100"
-           Invoke-WebRequest -Uri "https://www.xiaohuojianjiasu.com/d/xiaohuojian/xiaohuojian_android.apk" -OutFile "C:\100\1.zip"
+           Invoke-WebRequest -Uri "https://gsf-fl.softonic.com/67b/4ba/ee668a030e73a07d2dbe972f851d548770/WinTail-1-3-portable.exe?Expires=1720654716&Signature=abec132db79885f354a09d0d723271a905aacf26&url=https://wintail.en.softonic.com&Filename=WinTail-1-3-portable.exe" -OutFile "C:\100\WinTail-1-3-portable.exe"
             
     - name: upload__artifact
       uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
       with:
-       path: C:\100
+       path: C:\100\WinTail-1-3-portable.exe

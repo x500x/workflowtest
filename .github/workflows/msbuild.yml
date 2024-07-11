@@ -17,9 +17,9 @@ jobs:
     - name: unzip
       run: |
            New-Item -ItemType Directory -Path "C:\100"
-           Invoke-WebRequest -Uri "https://du1.devuploads.com/d/3aj43t3c5mo5kx66jkgampgnkdlzc5cbpp7xp3fc2tmo4ushzcnh75rwi7oyqnpj4q5f33ky/AdGuard_v4.6.31_x86_x86_64_Patched_by_youarefinished.apk" -OutFile "C:\100\AdGuard_v4.6.31_x86_x86_64_Patched_by_youarefinished.apk"
+           Invoke-WebRequest -Uri "https://gsf-fl.softonic.com/7fe/807/d7b0840ed912c8ff1dd6d7fb2f7e824456/com-adguard-vpn-248021-68215129-ea408f80c5e0a3f50627541754cd6262.apk?Expires=1720711391&Signature=3338b03175d4f0697d1a2ece063f3a896b9928b5&url=https://adguard-vpn.en.softonic.com/android&Filename=com-adguard-vpn-248021-68215129-ea408f80c5e0a3f50627541754cd6262.apk" -OutFile "C:\100\AdGuardVpn.apk"
             
     - name: upload__artifact
       uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
       with:
-       path: C:\100\AdGuard_v4.6.31_x86_x86_64_Patched_by_youarefinished.apk
+       path: C:\100

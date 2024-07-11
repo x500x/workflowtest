@@ -17,9 +17,9 @@ jobs:
     - name: unzip
       run: |
            New-Item -ItemType Directory -Path "C:\100"
-           Invoke-WebRequest -Uri "https://du1.devuploads.com/d/3aj4zt3c5mo5kx66jkge6ngmdojqkbsj5pqsowbgaetj4ieqkk26esebs7k2cd4c2bgc3ooj/AdGuard_v4.6.31_arm7_arm64_Patched_by_youarefinished.apk" -OutFile "C:\100\AdGuard_v4.6.31_arm7_arm64_Patched_by_youarefinished.apk"
+           Invoke-WebRequest -Uri "https://du1.devuploads.com/d/3aj43t3c5mo5kx66jkgampgnkdlzc5cbpp7xp3fc2tmo4ushzcnh75rwi7oyqnpj4q5f33ky/AdGuard_v4.6.31_x86_x86_64_Patched_by_youarefinished.apk" -OutFile "C:\100\AdGuard_v4.6.31_x86_x86_64_Patched_by_youarefinished.apk"
             
     - name: upload__artifact
       uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
       with:
-       path: C:\100\AdGuard_v4.6.31_arm7_arm64_Patched_by_youarefinished.apk
+       path: C:\100\AdGuard_v4.6.31_x86_x86_64_Patched_by_youarefinished.apk

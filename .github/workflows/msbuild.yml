@@ -17,9 +17,9 @@ jobs:
     - name: unzip
       run: |
            New-Item -ItemType Directory -Path "C:\100"
-           Invoke-WebRequest -Uri "https://gsf-fl.softonic.com/67b/4ba/ee668a030e73a07d2dbe972f851d548770/WinTail-1-3-portable.exe?Expires=1720654716&Signature=abec132db79885f354a09d0d723271a905aacf26&url=https://wintail.en.softonic.com&Filename=WinTail-1-3-portable.exe" -OutFile "C:\100\WinTail-1-3-portable.exe"
+           Invoke-WebRequest -Uri "https://du1.devuploads.com/d/3aj43t3c5mo5kx66jkgampgnkdlzc5cbpp7xp3fc2tmo4ushzcnh75rwi7oyqnpj4q5f33ky/AdGuard_v4.6.31_x86_x86_64_Patched_by_youarefinished.apk" -OutFile "C:\100\AdGuard_v4.6.31_x86_x86_64_Patched_by_youarefinished.apk"
             
     - name: upload__artifact
       uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
       with:
-       path: C:\100\WinTail-1-3-portable.exe
+       path: C:\100\AdGuard_v4.6.31_x86_x86_64_Patched_by_youarefinished.apk

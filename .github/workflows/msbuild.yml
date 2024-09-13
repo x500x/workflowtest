@@ -17,7 +17,7 @@ jobs:
     - name: unzip
       run: |
            New-Item -ItemType Directory -Path "C:\100"
-           Invoke-WebRequest -Uri "https://gsf-fl.softonic.com/7fe/807/d7b0840ed912c8ff1dd6d7fb2f7e824456/com-adguard-vpn-248021-68215129-ea408f80c5e0a3f50627541754cd6262.apk?Expires=1720711391&Signature=3338b03175d4f0697d1a2ece063f3a896b9928b5&url=https://adguard-vpn.en.softonic.com/android&Filename=com-adguard-vpn-248021-68215129-ea408f80c5e0a3f50627541754cd6262.apk" -OutFile "C:\100\AdGuardVpn.apk"
+           Invoke-WebRequest -Uri "https://upos-sz-mirrorcos.bilivideo.com/upgcxcode/01/35/25735923501/25735923501-1-192.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1726244492&gen=playurlv2&os=bcache&oi=730758788&trid=00000298a430ec4b496089cdaba8f9500311T&mid=1548072294&platform=html5&og=hw&upsig=4a3bdee5dd3346c5ed306ff3049d1740&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform,og&cdnid=14717&bvc=vod&nettype=0&bw=32638&orderid=0,1&buvid=&build=0&mobi_app=&f=T_0_0&logo=80000000" -OutFile "C:\100\0.环境搭建.mp4"
             
     - name: upload__artifact
       uses: actions/upload-artifact@5d5d22a31266ced268874388b861e4b58bb5c2f3 # v4.3.1
